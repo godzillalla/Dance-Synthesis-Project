@@ -1,0 +1,7 @@
+
+spine: 9
+left_hip: 1
+right_hip: 5
+
+frame_per_second: 30
+default_rotation_order: ['Zrotation', 'Xrotation', 'Yrotation']

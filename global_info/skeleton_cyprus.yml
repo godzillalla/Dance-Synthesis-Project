@@ -1,0 +1,7 @@
+BVH: Cyprus_data.bvh
+
+left_foot: [3, 4]
+right_foot: [7, 8]
+hips: [2, 6]
+shoulders: [14, 18]
+head: 12
