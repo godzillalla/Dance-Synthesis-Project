@@ -17,7 +17,7 @@ In this paper, we propose a novel keyframe-based motion generation network based
 
 We use contemporary data from paper 
 
-> Aristidou A , Zeng Q , Stavrakis E , et al. Emotion control of unstructured dance movements. ACM SIGGRAPH. 2017.
+> Andreas Aristidou, Qiong Zeng, Efstathios Stavrakis, KangKang Yin, Daniel Cohen-Or, Yiorgos Chrysanthou, and Baoquan Chen. 2017. Emotion control of unstructured dance movements. In Proceedings of the ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA '17).
 
 ## For data preparation
 
