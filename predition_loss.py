@@ -9,9 +9,9 @@ class ReconstructionLoss(nn.Module):
 
     def forward(self, pre_seq, gt_seq):
         MSE_loss = nn.MSELoss()
-        rec_loss = MSE_loss(pre_seq[:, 1:-1, :], gt_seq[:, 1:-1, :]) * 10 + \
-                   MSE_loss(pre_seq[:, -1, :], gt_seq[:, -1, :]) * 20 + \
-                   MSE_loss(pre_seq[:, 0, :-self.velocity_dim], gt_seq[:, 0, :-self.velocity_dim]) * 20
+        rec_loss = MSE_loss(pre_seq[:, 1:-1, :], gt_seq[:, 1:-1, :])+ \
+                   MSE_loss(pre_seq[:, -1, :], gt_seq[:, -1, :]) + \
+                   MSE_loss(pre_seq[:, 0, :-self.velocity_dim], gt_seq[:, 0, :-self.velocity_dim])
         return rec_loss * 3
 
 
