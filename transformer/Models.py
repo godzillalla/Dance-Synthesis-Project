@@ -165,8 +165,8 @@ class Transformer(nn.Module):
 
         pad_mask = get_pad_mask(src_seq.shape[0], src_seq.shape[1], self.n_position).to(self.device)
         enc_output = self.encoder(src_seq, pad_mask)
-        dec_output = self.decoder(trg_seq[:, 3:4, :], enc_output[:, 3:4, :], pad_mask[..., 3:4])
-        seq_logit = self.converter(dec_output)
+        dec_output = self.decoder(trg_seq, enc_output, pad_mask)
+        seq_logit = self.converter(dec_output[:, 3:4, :])
 
         '''
         print("--------------------- transformer ------------------------")
@@ -177,9 +177,3 @@ class Transformer(nn.Module):
         '''
 
         return seq_logit
-
-
-
-
-
-
