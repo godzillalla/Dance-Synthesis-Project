@@ -11,6 +11,7 @@ In this paper, we propose a novel keyframe-based motion generation network based
 - Matplotlib
 - NumPy
 - Pyyaml
+- transformations
 - ...
 
 (1) Define skeleton information in ./global_info; (2) Put motion data(.bvh) in ./data; (3) Modify training or test parameters in ./config.py.
